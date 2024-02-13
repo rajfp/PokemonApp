@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                         startDestination = "pokemon_listing_screen"
                     ) {
                         composable("pokemon_listing_screen") {
-                            //PokemonListScreen(navController = navController)
+                            PokemonListScreen(navController = navController)
                         }
                         composable("pokemon_detail_screen/{dominantColor}/{pokemonName}",
                             arguments = listOf(
