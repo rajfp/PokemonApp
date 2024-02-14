@@ -47,6 +47,14 @@ fun PokemonListScreen(
                     .fillMaxWidth()
                     .align(CenterHorizontally)
             )
+            SearchBar(
+                hint = "Search",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) {
+
+            }
         }
 
     }
@@ -65,7 +73,8 @@ fun SearchBar(
         mutableStateOf(hint != "")
     }
     Box(modifier = modifier) {
-        BasicTextField(value = text,
+        BasicTextField(
+            value = text,
             onValueChange = {
                 text = it
                 onSearch(it)
