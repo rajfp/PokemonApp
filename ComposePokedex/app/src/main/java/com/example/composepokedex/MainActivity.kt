@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
                                 val color = it.arguments?.getInt("dominantColor")
                                 color?.let {
                                     Color(it)
-                                }?: Color.White
+                                } ?: Color.White
                             }
                             val pokemonName = remember {
                                 it.arguments?.getString("pokemonName")
