@@ -85,6 +85,9 @@ class PokemonViewModel @Inject constructor(val repository: PokemonRepository) : 
                     loading.value = false
                     error.value = result.message!!
                 }
+                is  com.example.composepokedex.util.Response.Loading->{
+
+                }
             }
         }
     }
