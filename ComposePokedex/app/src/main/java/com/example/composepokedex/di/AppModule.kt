@@ -26,7 +26,7 @@ object AppModule {
     ): PokeApi {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://pokeapi.co/api/v2")
+            .baseUrl("https://pokeapi.co/api/v2/")
             .build()
             .create(PokeApi::class.java)
     }
